@@ -1,0 +1,160 @@
+@import url(https://fonts.googleapis.com/css?family=Alfa+Slab+One|VT323|Oswald);
+
+$grey: #454545;
+$red: #cf0202;
+$yellow: #d4ce35;
+$blue:#0012d4;
+$darkred:#570a0a;
+$DDred:#7f0000;
+$lightblue: #4596ff;
+
+body {
+  text-align:center;
+  background-image: url('http://www.desktopimages.org/preview/get_photo/92048/2400/1350');
+ background-size:100% 1000px;
+  #container {
+    display:inline-block;
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    background: $grey;
+    margin-top: 100px;
+    text-align:center;
+    user-select: none;
+    #blocks {
+      display:inline-block;
+      margin-top: 25px;
+      height: 400px;
+      width: 400px;
+      border-radius: 50%;
+      overflow: hidden;
+      td {
+        overflow: hidden;
+        height: 200px;
+        width: 200px;
+      }
+      .green {
+        background:green;
+        border-right: 30px solid $grey;
+        border-bottom: 30px solid $grey;
+        &.light {
+          background:#17c200 !important;
+        }
+      }
+      .red {
+        background:$red;
+        border-left: 30px solid $grey;
+        border-bottom: 30px solid $grey;
+        &.light {
+          background:#ff0303 !important;
+        }
+      }
+      .yellow {
+        background:$yellow;
+        border-right: 30px solid $grey;
+        border-top: 30px solid $grey;
+        &.light {
+          background:#fffa6b !important;
+        }
+      }
+      .blue {
+        background:$blue;
+        border-left: 30px solid $grey;
+        border-top: 30px solid $grey;
+        &.light {
+          background:#4757ff !important;
+        }
+      }
+    }
+    #interface {
+      display:inline-block;
+      position:relative;
+      top:-312px;
+      height: 225px;
+      width: 225px;
+      background:white;
+      border-radius: 50%;
+      border: 10px solid $grey;
+      h1 {
+        font-family:'Alfa Slab One';
+        font-size: 40px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+      }
+      #lamp {
+            margin-left:162px;
+            margin-top: -3px;
+            height: 10px;
+            width:10px;
+            border-radius: 50%;
+            border: 3px solid $grey;
+            background: $grey;
+      }
+      .in {
+        display: inline-block;
+        margin: 0 5px;
+          #screen {
+          background: $darkred;
+          height: 40px;
+          width:60px;
+          border-radius: 10px;
+          border: 4px solid $grey;
+          color: $DDred;
+          font-size: 25px;
+          font-family: VT323;
+          }
+        p {
+          font-family: Oswald;
+          font-size: 11px;
+        }
+          button {
+            height: 30px;
+            width:30px;
+            border-radius: 50%;
+            border: 3px solid $grey;
+            box-shadow: 2px 3px 13px;
+            outline:none;
+            margin-bottom:6px;
+            &:active {
+              margin-bottom:5px;
+              box-shadow: none;
+            }
+          }
+          #st {
+            background: red; 
+          }
+          #str {
+            background: yellow;
+          }
+        }
+      #start, #strick {
+        margin-left: 13px;
+      }
+      #onoff p {
+        display: inline-block;
+        position: relative;
+        top: -6px;
+        font-family: Oswald;
+        font-size: 11px;
+        }
+        #offon {
+          cursor: pointer;
+          display: inline-block;
+          height: 22px;
+          width:42px;
+          border-radius: 3px;
+          border: 3px solid $grey;
+          background: $grey;
+          #begunok {
+            border-radius: 3px;
+            height: 16px;
+            width:16px;
+            background:$lightblue;
+          }
+       }
+    }
+  }
+}
+.avoid-clicks {
+  pointer-events: none;
+}
